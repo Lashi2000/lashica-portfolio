@@ -9,7 +9,7 @@ I'm a business analyst with a passion for data analysis and uncovering insights 
 
 ## 🔗 Live Site
 Once GitHub Pages is enabled, this site will be viewable at:  
-👉 [https://yourusername.github.io/lashica-portfolio](https://yourusername.github.io/lashica-portfolio)
+👉 [https://Lashi2000.github.io/lashica-portfolio](https://Lashi2000.github.io/lashica-portfolio)
 
 ## 📊 Featured Project
 ### Bellabeat Case Study
@@ -26,4 +26,4 @@ See all certifications on [LinkedIn](https://www.linkedin.com/in/lashica-liyanaa
 ## 📬 Contact
 - Email: Lashi2000@yahoo.com
 - LinkedIn: [@lashica-liyanaarachchi](https://www.linkedin.com/in/lashica-liyanaarachchi-29857377/)
-- GitHub: [@yourusername](https://github.com/yourusername)
+- GitHub: [@yourusername](https://lashi2000.github.io/lashica-portfolio/)
