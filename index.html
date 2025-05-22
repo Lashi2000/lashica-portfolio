@@ -1,74 +1,125 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lashica Liyanaarachchi | Portfolio</title>
+  <title>Lashika | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Inter', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    header, section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
+      background: url('https://www.transparenttextures.com/patterns/white-wall-3.png');
+      color: #2e2f2e;
     }
     header {
-      background-color: #4a90e2;
+      background: linear-gradient(135deg, #6cae75 0%, #94bfa1 50%, #cce3d5 100%);
       color: white;
       text-align: center;
+      padding: 120px 20px 80px;
+      position: relative;
+      overflow: hidden;
+    }
+    header::before, header::after {
+      content: "";
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 50%;
+      z-index: 0;
+    }
+    header::before {
+      top: -100px;
+      left: -100px;
+    }
+    header::after {
+      bottom: -100px;
+      right: -100px;
     }
     h1 {
       margin-bottom: 10px;
+      font-size: 3em;
+      position: relative;
+      z-index: 1;
+    }
+    nav {
+      margin-top: 30px;
+      z-index: 1;
+      position: relative;
     }
     nav a {
-      margin: 0 10px;
+      margin: 0 15px;
       color: white;
       text-decoration: none;
       font-weight: 600;
+      font-size: 1.1em;
     }
-    .project, .certification {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section h2 {
+      font-size: 2em;
       margin-bottom: 20px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      color: #4b6043;
+      display: flex;
+      align-items: center;
+    }
+    section h2::before {
+      content: "\1F4C4";
+      margin-right: 10px;
+    }
+    #projects h2::before { content: "\1F4CA"; }
+    #certifications h2::before { content: "\1F3C6"; }
+    #contact h2::before { content: "\2709"; }
+
+    .project, .certification, .resume {
+      background: #ffffff;
+      padding: 25px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+      border-left: 5px solid #6cae75;
     }
     a {
-      color: #4a90e2;
+      color: #4b916c;
       text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
     }
     footer {
       text-align: center;
       font-size: 0.9em;
-      padding: 20px;
+      padding: 30px 20px;
       color: #777;
+      background-color: #e5ece8;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Lashica Liyanaarachchi</h1>
-    <p>Data Analyst | Problem Solver | Curious Mind</p>
+    <h1>Lashika Liyanaarachchi</h1>
+    <p>Senior Business Analyst | Data Storyteller | UX-Focused Problem Solver</p>
     <nav>
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
       <a href="#certifications">Certifications</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
-
   <section id="about">
     <h2>About Me</h2>
-    <p>I am a data analyst with a passion for uncovering insights through data storytelling and visualization. I enjoy tackling business challenges by transforming raw data into actionable strategies.</p>
+    <p>With over 16 years of experience in financial services, I bring a unique blend of business acumen, data analysis, and UX-focused solutions. I’ve led cross-functional teams in Agile environments to deliver high-impact solutions across retail banking, insurance, and global operations.</p>
+    <p>My career began at Sun Life Financial where I supported internal systems and disaster recovery. I later joined Scotiabank, evolving from a Business Systems Analyst to a Business Analyst Specialist. There, I managed large-scale initiatives like Fraud Analytics redesign, AFT automation using Pega Robotics, and KYC/AML compliance. I used tools like SQL, Tableau, Visio, JIRA, and Pega to create data-driven and user-centered process improvements.</p>
+    <p>Most recently, I completed the Google Data Analytics Certificate, applying my learning in a data project for Bellabeat where I analyzed fitness tracker data and visualized insights using Tableau and BigQuery.</p>
+    <p>I’m passionate about continuous learning, lean thinking, and solving complex business problems through data and technology.</p>
   </section>
-
 
   <section id="projects">
     <h2>Projects</h2>
@@ -77,28 +128,33 @@
       <p>Analyzed fitness tracking data to recommend marketing strategies for a wellness tech company. Utilized Python, Pandas, and data visualization techniques to derive actionable insights.</p>
       <a href="https://www.kaggle.com/code/lashikal/coursera-project-bellabeat-company" target="_blank">View on Kaggle</a>
     </div>
-    <!-- Add more projects below -->
   </section>
 
+  <section id="resume">
+    <h2>Resume</h2>
+    <div class="resume">
+      <p>Download my resume to learn more about my professional background and experience.</p>
+      <a href="Resume%20Lashika%20L%20BA.docx" download>Download Resume (Word Doc)</a><br/>
+      <a href="Resume%20Lashika%20L%20BA.pdf" download>Download Resume (PDF)</a>
+    </div>
+  </section>
 
   <section id="certifications">
     <h2>Certifications</h2>
     <div class="certification">
-      <p>Check out my full list of certifications on <a href="https://www.linkedin.com/in/lashica-liyanaarachchi-29857377/" target="_blank">LinkedIn</a>.</p>
+      <p>Check out my full list of certifications on <a href="https://www.linkedin.com/in/lashika-liyanaarachchi-29857377/" target="_blank">LinkedIn</a>.</p>
     </div>
   </section>
 
-
   <section id="contact">
     <h2>Contact</h2>
-    <p>Email: Lashi2000@yahoo.com</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/lashika-liyanaarachchi-29857377/" target="_blank">/lashica-liyanaarachchi</a></p>
-    <p>GitHub: <a href="https://lashi2000.github.io/lashica-portfolio/" target="_blank">github.com/yourgithub</a></p>
+    <p>Email: <a href="mailto:Lashi2000@yahoo.com">Lashi2000@yahoo.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/lashika-liyanaarachchi-29857377/" target="_blank">https://www.linkedin.com/in/lashika-liyanaarachchi-29857377/</a></p>
+    <p>GitHub: <a href="https://lashi2000.github.io/lashica-portfolio/" target="_blank">https://lashi2000.github.io/lashica-portfolio/</a></p>
   </section>
 
-
   <footer>
-    <p>&copy; 2025 Lashika Liyanaarachchi. All rights reserved.</p>
+    <p>&copy; 2025 Lashica Liyanaarachchi. All rights reserved.</p>
   </footer>
 </body>
 </html>
